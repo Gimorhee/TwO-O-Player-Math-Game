@@ -25,3 +25,12 @@ while (player1.alive? && player2.alive?)
     puts "-----------NEW TURN-----------"
     current_player = (current_player + 1) % 2
 end
+
+if player1.life == 0 
+    puts "#{player2.name} wins with a score of #{player2.life}/3"
+elsif player2.life == 0
+    puts "#{player1.name} wins with a score of #{player1.life}/3"
+end
+
+puts "-----------GAME OVER-----------"
+puts "Good Bye!"
